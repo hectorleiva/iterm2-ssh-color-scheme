@@ -15,6 +15,7 @@ function tabc() {
 function tab-reset() {
     NAME="Hector"
     echo -e "\033]50;SetProfile=$NAME\a"
+    trap - INT EXIT
 }
 
 function colorssh() {

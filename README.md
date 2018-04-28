@@ -20,6 +20,7 @@ function tabc() {
 function tab-reset() {
     NAME="YOUR_CUSTOM_PROFILE_NAME_HERE"
     echo -e "\033]50;SetProfile=$NAME\a"
+    trap - INT EXIT
 }
 
 function colorssh() {
